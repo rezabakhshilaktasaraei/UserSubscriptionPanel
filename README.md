@@ -16,3 +16,7 @@ Made in [Unknown!] and Published under [AGPL-3.0](./LICENSE).
 We ❤️ contributors! If you'd like to contribute, feel free to submit a pull request or open an issue.
 
 Check [open issues](https://github.com/MatinDehghanian/marzneshin-sub-template/issues) to help the progress of this project.
+
+
+## حمایت و سفارش
+برای سفارش تمپلیت اختصاصی خودتون توی <a href="https://t.me/Mqtin">تلگرام</a> با من در ارتباط باشین.
