@@ -1,18 +1,34 @@
-# Marzneshin Templates
-Group of [Marzneshin](https://github.com/marzneshin/marzneshin) Subscription Page templates
+<h1 align="center"/>تمپلیت برای پنل  <a href="https://github.com/marzneshin/marzneshin">مرزنشین</a></h1>
 
-# Usage
+# مقدمه
+ تمپلیت شخصی سازی شده برای مرزنشین
 
-You can use wget, curl, ftp and ... to get html files for each subscription templates for your Marzban. Go to each template to see usage of it.
 
-First template: [template-01](https://github.com/MatinDehghanian/marzneshin-sub-template/tree/master/template-01)
+# نصب
+برای نصب تمپلیت دستورات زیر را در ترمینال سرور خود اجرا کنید:
+1. دانلود فایل تمپلیت
+```sh
+sudo wget -N -P /var/lib/marzneshin/templates/subscription/ https://raw.githubusercontent.com/MatinDehghanian/marzneshin-sub-template/master/index.html
+```
+2. دستورات زیر رو تو ترمینال سرورتون بزنید:
+```sh
+echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzneshin/templates/"' | sudo tee -a /etc/opt/marzneshin/.env
+echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /etc/opt/marzneshin/.env
+```
+یا مقادیر زیر رو در فایل `.env` در پوشه `/etc/opt/marzneshin` قرار بدین
+```sh
+CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzneshin/templates/"
+SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"
+```
 
-# License
+3. ری استارت مرزنشین
+```sh
+marzneshin restart
+```
 
-Made in [Unknown!] and Published under [AGPL-3.0](./LICENSE).
+## بروزرسانی
+برای بروزرسانی تمپلیت ها فقط کافیست مرحله 1 را تکرار کنید.
 
-# Contributors
 
-We ❤️ contributors! If you'd like to contribute, feel free to submit a pull request or open an issue.
-
-Check [open issues](https://github.com/MatinDehghanian/marzneshin-sub-template/issues) to help the progress of this project.
+## حمایت و سفارش
+برای سفارش تمپلیت اختصاصی خودتون توی <a href="https://t.me/Mqtin">تلگرام</a> با من در ارتباط باشین
